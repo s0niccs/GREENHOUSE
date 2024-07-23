@@ -168,6 +168,8 @@ nav ul .menu li a:hover {
 .table-wrapper {
   width: 100%;
   margin-top: 3rem;
+  overflow-y: scroll;
+  height: 420px;
   overflow-x: auto;
 }
 
@@ -183,6 +185,8 @@ nav ul .menu li a:hover {
   border-collapse: collapse;
 }
 
+
+
 .table-wrapper table thead tr th {
   padding: 1rem .5rem;
   color: #1E40AF;
@@ -190,7 +194,17 @@ nav ul .menu li a:hover {
   font-size: 1rem;
   text-align: left;
   border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
-  
+}
+
+.table-wrapper table thead tr.cahaya th {
+  color: #FBBF24;
+}
+
+.table-wrapper table thead {
+  position: sticky;
+  top: 0;
+  background: #fdfdfd;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
 }
 
 .table-wrapper table tbody tr td {

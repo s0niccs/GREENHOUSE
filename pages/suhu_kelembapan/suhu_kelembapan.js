@@ -46,8 +46,8 @@ function Setup() {
 
         if (value[0].split("-")[1].length > 5 || value[1].split("-")[1].length > 5 || value[0].split("-")[0].length > 5 || value[1].split("-")[0].length > 5) return;
 
-        console.log(res.val().value);
-
+        if (value[0].split("-")[1].length < 4 || value[1].split("-")[1].length < 4 || value[0].split("-")[0].length < 4 || value[1].split("-")[0].length < 4) return;
+        
         data.push({
           suhu_1: value[0].split("-")[1] || 0,
           suhu_2: value[1].split("-")[1] || 0,
@@ -71,16 +71,18 @@ function Setup() {
 }
 
 function setData(data) {
-  document.querySelector(".value.suhu_1").innerHTML = parseFloat(data.suhu_1).toFixed(1);
-  document.querySelector(".value.suhu_2").innerHTML = parseFloat(data.suhu_2).toFixed(1);
-  document.querySelector(".value.kelembapan_1").innerHTML = parseFloat(data.kelembapan_1).toFixed(1);
-  document.querySelector(".value.kelembapan_2").innerHTML = parseFloat(data.kelembapan_2).toFixed(1);
-  document.querySelector(".value.fuzzy").innerHTML = typeof data.durasi_pompa === "string" ? data.durasi_pompa : parseFloat(data.durasi_pompa).toFixed(1);
+  console.log(data);
+  document.querySelector(".value.suhu_1").innerHTML = `${data.suhu_1[0]}${data.suhu_1[1]}.${data.suhu_1[3]}`;
+  document.querySelector(".value.suhu_2").innerHTML = `${data.suhu_2[0]}${data.suhu_2[1]}.${data.suhu_2[3]}`;
+  document.querySelector(".value.kelembapan_1").innerHTML = `${data.kelembapan_1[0]}${data.kelembapan_1[1]}.${data.kelembapan_1[3]}`;
+  document.querySelector(".value.kelembapan_2").innerHTML = `${data.kelembapan_2[0]}${data.kelembapan_2[1]}.${data.kelembapan_2[3]}`;
+
+  document.querySelector(".value.fuzzy").innerHTML = typeof data.durasi_pompa === "string" ? data.durasi_pompa : `${data.durasi_pompa[0]}${data.durasi_pompa[1]}.${data.durasi_pompa[3]}`;
 }
 
 const getDataTable = (data) => {
   let table = [];
-  data.forEach((res, i) => {
+  data.map((res, i) => {
     table += updateUI(res, i);
   });
   document.querySelector(".table-row").innerHTML = table;
@@ -89,11 +91,11 @@ const getDataTable = (data) => {
 const updateUI = (res, i) => {
   return `<tr>
             <td>${i + 1}</td>
-            <td>${res.suhu_1}</td>
-            <td>${res.suhu_2}</td>
-            <td>${res.kelembapan_1}</td>
-            <td>${res.kelembapan_2}</td>
-            <td>${res.durasi_pompa}</td>  
+            <td>${res.suhu_1[0]}${res.suhu_1[1]}.${res.suhu_1[3]}</td>
+            <td>${res.suhu_2[0]}${res.suhu_2[1]}.${res.suhu_2[3]}</td>
+            <td>${res.kelembapan_1[0]}${res.kelembapan_1[1]}.${res.kelembapan_1[3]}</td>
+            <td>${res.kelembapan_2[0]}${res.kelembapan_2[1]}.${res.kelembapan_2[3]}</td>
+            <td>${typeof res.durasi_pompa === "string" ? res.durasi_pompa : `${res.durasi_pompa[0]}${res.durasi_pompa[1]}.${res.durasi_pompa[3]}`}</td>  
             <td>${res.jam}</td>  
         </tr>`;
-}
+};
