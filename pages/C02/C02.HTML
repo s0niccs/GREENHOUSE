@@ -12,8 +12,9 @@
   <link rel="icon" type="greenhouseicon" href="/assets/icon.png">
   <title>Monsite - C02</title>
 </head>
+
 <body>
-<nav>
+  <nav>
     <ul>
       <div class="logo">
         <li>
@@ -25,7 +26,7 @@
       <div class="menu">
         <li><a href="/pages/cahaya/cahaya_page.html">Cahaya</a></li>
         <li><a href="/pages/suhu_kelembapan/suhu_kelembapan_page.html">Suhu & Kelembapan</a></li>
-        <li><a href="/pages/NPK/npk.html">NPK</a></li>
+        <li><a href="/pages/npk/npk_page.html">NPK</a></li>
         <li><a href="/pages/C02/C02.HTML">CO<sup>2</sup> </a></li>
       </div>
     </ul>
@@ -34,18 +35,34 @@
   <div class="container">
     <div class="logo2">CO2</div>
     <div class="sensor-data">
-      <h2>Sensor 1</h2>
+      <h2>Sensor CO2</h2>
       <p>CO2 Level: <span id="co2_1"></span> ppm</p>
       <p class="recommendation" id="rec_1"></p>
-      <br>
-      <h2>Sensor 2</h2>
-      <p>CO2 Level: <span id="co2_2"></span> ppm</p>
-      <p class="recommendation" id="rec_2"></p>
+    </div>
+  </div>
+
+  <div class="history-container">
+    <h2>History</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Time</th>
+            <th>CO2 Level</th>
+          </tr>
+        </thead>
+        <tbody id="history_table">
+          <!-- Data will be populated here -->
+        </tbody>
+      </table>
     </div>
   </div>
 
 </body>
 
-<script type="module" src="/pages/cahaya/cahaya_page.js"></script>
+
+
+
 
 </html>
