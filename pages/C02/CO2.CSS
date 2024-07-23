@@ -1,0 +1,116 @@
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.navbar .profile {
+    display: flex;
+    align-items: center;
+}
+.navbar .profile span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.navbar .icon {
+    font-size: 20x;
+    cursor: pointer;
+    display: flex;
+}
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #eaeff7;
+    color: #fff;
+    transition: left 0.3s;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sidebar.active {
+    left: 0;
+}
+.sidebar a {
+    display: block;
+    color: #74a2e6;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px
+}
+.sidebar a:hover {
+    background-color: #74a2e6;
+}
+.content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.content p {
+    font-size: 18px;
+    color: #fff;
+}
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.chart-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 48%;
+}
+.chart-box h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+  }
+  .logo {
+    font-size: 150px;
+    font-weight: bold;
+    color: #1E40AF; /* Warna tosca */
+  }
+  .logo2 {
+    font-size: 150px;
+    font-weight: bold;
+    color: #1E40AF; /* Warna tosca */
+  }
+  .sensor-data {
+    margin-left: 50px;
+  }
+  .sensor-data p {
+    font-size: 24px;
+  }
+  .recommendation {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000;
+  }

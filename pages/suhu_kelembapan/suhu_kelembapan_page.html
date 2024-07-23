@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/index.css">
+  <link rel="icon" type="greenhouseicon" href="/assets/icon.png">
+  <title>Monsite - Suhu & Kelembapan</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <div class="logo">
+        <li>
+          <a href="/index.html">
+            <img src="/assets/icon.png" alt="">
+          </a>
+        </li>
+      </div>
+      <div class="menu">
+        <li><a href="/pages/cahaya/cahaya_page.html">Cahaya</a></li>
+        <li><a href="/pages/suhu_kelembapan/suhu_kelembapan_page.html">Suhu & Kelembapan</a></li>
+        <li><a href="/pages/NPK/npk.html">NPK</a></li>
+        <li><a href="/pages/C02/C02.HTML">CO<sup>2</sup> </a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+
+    <div class="container">
+      <div class="card">
+        <h3 class="value suhu_1">50</h3>
+        <h5 class="name">Nilai Suhu 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value suhu_2">50</h3>
+        <h5 class="name">Nilai Suhu 2</h5>
+      </div>
+      <div class="card">
+        <h3 class="value kelembapan_1">50</h3>
+        <h5 class="name">Nilai Sensor Kelembapan 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value kelembapan_2">50</h3>
+        <h5 class="name">Nilai Sensor Kelembapan 2</h5>
+      </div>
+      <div class="card">
+        <h3 class="value fuzzy">50</h3>
+        <h5 class="name">Durasi Pompa (Fuzzy Logic)</h5>
+      </div>
+    </div>
+
+    <div class="table-wrapper">
+      <table width="90%" padding="2rem">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Suhu 1</th>
+            <th>Suhu 2</th>
+            <th>Kelembapan 1</th>
+            <th>Kelembapan 2</th>
+            <th>Durasi Pompa (Fuzzy)</th>
+            <th>Waktu</th>
+          </tr>
+        </thead>
+        <tbody class="table-row">
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+
+</body>
+
+<script type="module" src="/pages/suhu_kelembapan/suhu_kelembapan.js"></script>
+
+<script></script>
+
+
+</html>

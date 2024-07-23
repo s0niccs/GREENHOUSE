@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/index.css">
+  <link rel="icon" type="greenhouseicon" href="/assets/icon.png">
+  <title>Monsite - Cahaya</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <div class="logo">
+        <li>
+          <a href="/index.html">
+            <img src="/assets/icon.png" alt="">
+          </a>
+        </li>
+      </div>
+      <div class="menu">
+        <li><a href="/pages/cahaya/cahaya_page.html">Cahaya</a></li>
+        <li><a href="/pages/suhu_kelembapan/suhu_kelembapan_page.html">Suhu & Kelembapan</a></li>
+        <li><a href="">NPK</a></li>
+        <li><a href="">CO<sup>2</sup> </a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+
+    <div class="container">
+      <div class="card">
+        <h3 class="value sensor_ldr">0</h3>
+        <h5 class="name" >Nilai Sensor LDR<br>(Lux Meter)</h5>
+      </div>
+
+      <div class="card">
+        <h3 class="value fuzzy">0</h3>
+        <h5 class="name" >intensitas Lampu<br>(Fuzzy Logic)</h5>
+      </div>
+
+      <div class="card">
+        <h3 class="value lampu">Mati</h3>
+        <h5 class="name" >Kondisi Lampu</h5>
+      </div>
+
+      <div class="card">
+        <h3 class="value cahaya">Mati</h3>
+        <h5 class="name" >Kondisi Cahaya</h5>
+      </div>
+    </div>
+
+
+    <!-- <div class="table-wrapper">
+      <table width="90%" padding="2rem">
+        <thead>
+          <tr class="cahaya">
+            <th>No</th>
+            <th>Nilai Sensor LDR</th>
+            <th>intensitas Lampu (Fuzzy Logic)</th>
+            <th>Waktu</th>
+          </tr>
+        </thead>
+        <tbody class="table-row">
+        </tbody>
+      </table>
+    </div> -->
+
+
+  </div>
+
+</body>
+
+<script type="module" src="/pages/cahaya/cahaya_page.js"></script>
+
+</html>

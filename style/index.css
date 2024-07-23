@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #edf2f9;
+}
+
+.wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.title {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1E40AF;
+  line-height: 2.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 4rem 0 0 0;
+}
+
+.box {
+  display: flex;
+  background: #fdfdfd;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -.2px -.2px 1px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+}
+
+.box .name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #030712;
+  text-align: center;
+}
+
+sup {
+  vertical-align: bottom;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background: #fdfdfd;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 1024px;
+}
+
+nav ul .logo li a img {
+  height: 2.5rem;
+  aspect-ratio: square;
+}
+
+
+nav ul .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav ul .menu li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #030712;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  text-decoration: solid underline #fdfdfd;
+}
+
+nav ul .menu li a:hover {
+  text-decoration: solid underline #1E40AF;
+}
+
+
+.card {
+  background-color: #fdfdfd;
+  width: 284px;
+  height: 180px;
+  border-radius: .6rem;
+  -webkit-border-radius: .6rem;
+  -moz-border-radius: .6rem;
+  -ms-border-radius: .6rem;
+  -o-border-radius: .6rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1), -.2px -.2px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.value {
+  margin-top: .7rem;
+  font-size: 5.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: monospace;
+  color: #030712;
+}
+
+.card .name {
+  width: auto;
+  padding: 1rem .5rem;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #1E40AF;
+  color: #fdfdfd;
+}
+
+
+.table-wrapper {
+  width: 100%;
+  margin-top: 3rem;
+  overflow-x: auto;
+}
+
+.table-wrapper table {
+  background-color: #fdfdfd;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  width: 100%;
+  padding-left: 1rem;
+  border-collapse: collapse;
+}
+
+.table-wrapper table thead tr th {
+  padding: 1rem .5rem;
+  color: #1E40AF;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: left;
+  border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
+  
+}
+
+.table-wrapper table tbody tr td {
+  padding: .8rem .5rem;
+  font-size: .8rem;
+  color: #030712;
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
+}

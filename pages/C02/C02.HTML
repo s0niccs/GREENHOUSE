@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/index.css">
+  <link rel="stylesheet" href="/pages/C02/CO2.CSS">
+  <link rel="icon" type="greenhouseicon" href="/assets/icon.png">
+  <title>Monsite - C02</title>
+</head>
+<body>
+<nav>
+    <ul>
+      <div class="logo">
+        <li>
+          <a href="/index.html">
+            <img src="/assets/icon.png" alt="">
+          </a>
+        </li>
+      </div>
+      <div class="menu">
+        <li><a href="/pages/cahaya/cahaya_page.html">Cahaya</a></li>
+        <li><a href="/pages/suhu_kelembapan/suhu_kelembapan_page.html">Suhu & Kelembapan</a></li>
+        <li><a href="/pages/NPK/npk.html">NPK</a></li>
+        <li><a href="/pages/C02/C02.HTML">CO<sup>2</sup> </a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="logo2">CO2</div>
+    <div class="sensor-data">
+      <h2>Sensor 1</h2>
+      <p>CO2 Level: <span id="co2_1"></span> ppm</p>
+      <p class="recommendation" id="rec_1"></p>
+      <br>
+      <h2>Sensor 2</h2>
+      <p>CO2 Level: <span id="co2_2"></span> ppm</p>
+      <p class="recommendation" id="rec_2"></p>
+    </div>
+  </div>
+
+</body>
+
+<script type="module" src="/pages/cahaya/cahaya_page.js"></script>
+
+</html>

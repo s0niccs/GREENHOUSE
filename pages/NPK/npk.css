@@ -1,0 +1,128 @@
+body {  
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E40AF;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+.navbar .profile {
+    display: flex;
+    align-items: center;
+}
+.navbar .profile span {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.navbar .icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #eaeff7;
+    color: #fff;
+    transition: left 0.3s;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.sidebar.active {
+    left: 0;
+}
+.sidebar a {
+    display: block;
+    color: #74a2e6;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px
+}
+.sidebar a:hover {
+    background-color: #74a2e6;
+}
+.content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.content p {
+    font-size: 18px;
+    color: #fff;
+}
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.chart-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 48%;
+}
+.chart-box h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #1E40AF;
+}
+canvas {
+    max-width: 100%;
+}
+.content {
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .table-container {
+        margin-top: 30px;
+        text-align: left;
+    }
+    h2 {
+        color: #fcfafa;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    th, td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+        color: #74a2e6;
+        text-align: left;
+    }
+    td {
+        text-align: left;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }

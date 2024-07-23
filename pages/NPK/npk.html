@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/index.css">
+  <link rel="stylesheet" href="npk.css">
+  <link rel="icon" type="greenhouseicon" href="/assets/icon.png">
+  <title>Monsite - NPK</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <div class="logo">
+        <li>
+          <a href="/index.html">
+            <img src="/assets/icon.png" alt="">
+          </a>
+        </li>
+      </div>
+      <div class="menu">
+        <li><a href="/pages/cahaya/cahaya_page.html">Cahaya</a></li>
+        <li><a href="/pages/suhu_kelembapan/suhu_kelembapan_page.html">Suhu & Kelembapan</a></li>
+        <li><a href="/pages/NPK/npk.html">NPK</a></li>
+        <li><a href="/pages/C02/C02.HTML">CO<sup>2</sup> </a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <p>Pemantauan dan Pengendalian NPK tanah secara real-time.</p>
+    <div class="chart-container">
+        <div class="chart-box">
+            <h3>Sensor 1: Nitrogen, Phosphorus, dan Potassium Levels</h3>
+            <canvas id="npkChart1"></canvas>
+        </div>
+        <div class="chart-box">
+            <h3>Sensor 2: Nitrogen, Phosphorus, dan Potassium Levels</h3>
+            <canvas id="npkChart2"></canvas>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="table-container">
+        <h2>Data Sensor NPK</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Sensor</th>
+                    <th>Nitrogen (N)</th>
+                    <th>Phosphorus (P)</th>
+                    <th>Potassium (K)</th>
+                </tr>
+            </thead>
+            <tbody id="data-table">
+                <!-- Data rows will be appended here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
