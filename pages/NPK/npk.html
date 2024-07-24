@@ -8,9 +8,8 @@
   <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style/index.css">
-  <link rel="stylesheet" href="npk.css">
   <link rel="icon" type="greenhouseicon" href="/assets/icon.png">
-  <title>Monsite - NPK</title>
+  <title>Monsite - Cahaya</title>
 </head>
 
 <body>
@@ -27,44 +26,110 @@
       <div class="menu">
         <li><a href="/pages/cahaya/cahaya_page.html">Cahaya</a></li>
         <li><a href="/pages/suhu_kelembapan/suhu_kelembapan_page.html">Suhu & Kelembapan</a></li>
-        <li><a href="/pages/NPK/npk.html">NPK</a></li>
+        <li><a href="/pages/npk/npk_page.html">npk</a></li>
         <li><a href="/pages/C02/C02.HTML">CO<sup>2</sup> </a></li>
       </div>
     </ul>
   </nav>
 
-  <div class="content">
-    <p>Pemantauan dan Pengendalian NPK tanah secara real-time.</p>
-    <div class="chart-container">
-        <div class="chart-box">
-            <h3>Sensor 1: Nitrogen, Phosphorus, dan Potassium Levels</h3>
-            <canvas id="npkChart1"></canvas>
-        </div>
-        <div class="chart-box">
-            <h3>Sensor 2: Nitrogen, Phosphorus, dan Potassium Levels</h3>
-            <canvas id="npkChart2"></canvas>
-        </div>
+  <div class="wrapper">
+
+    <div class="container">
+      <div class="card">
+        <h3 class="value nitrogen_1">0</h3>
+        <h5 class="name">Nitrogen 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value phosphorus_1">0</h3>
+        <h5 class="name">Phosphorus 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value potassium_1">0</h3>
+        <h5 class="name">Potassium 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value nitrogen_2">0</h3>
+        <h5 class="name">Nitrogen 2</h5>
+      </div>
+      <div class="card">
+        <h3 class="value phosphorus_2">0</h3>
+        <h5 class="name">Phosphorus 2</h5>
+      </div>
+      <div class="card">
+        <h3 class="value potassium_2">0</h3>
+        <h5 class="name">Potassium 2</h5>
+      </div>
+      <div class="card">
+        <h3 class="value pompa_nitrogen_1">0</h3>
+        <h5 class="name">Pompa Nitrogen 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value pompa_phosphorus_1">0</h3>
+        <h5 class="name">Pompa Phosphorus 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value pompa_potassium_1">0</h3>
+        <h5 class="name">Pompa Potassium 1</h5>
+      </div>
+      <div class="card">
+        <h3 class="value pompa_nitrogen_2">0</h3>
+        <h5 class="name">Pompa Nitrogen 2</h5>
+      </div>
+      <div class="card">
+        <h3 class="value pompa_phosphorus_2">0</h3>
+        <h5 class="name">Pompa Phosphorus 2</h5>
+      </div>
+      <div class="card">
+        <h3 class="value pompa_potassium_2">0</h3>
+        <h5 class="name">Pompa Potassium 2</h5>
+      </div>
     </div>
-</div>
-<div class="content">
-    <div class="table-container">
-        <h2>Data Sensor NPK</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Timestamp</th>
-                    <th>Sensor</th>
-                    <th>Nitrogen (N)</th>
-                    <th>Phosphorus (P)</th>
-                    <th>Potassium (K)</th>
-                </tr>
-            </thead>
-            <tbody id="data-table">
-                <!-- Data rows will be appended here by JavaScript -->
-            </tbody>
-        </table>
+
+    <div class="table-wrapper">
+      <table width="90%" padding="2rem">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nitrogen</th>
+            <th>Phosphorus</th>
+            <th>Potassium</th>
+            <th>Pompa Nitrogen</th>
+            <th>Pompa Phosphorus</th>
+            <th>Pompa Potassium</th>
+            <th>Waktu</th>
+          </tr>
+        </thead>
+        <tbody class="table-row">
+        </tbody>
+      </table>
     </div>
-</div>
+
+    <div class="table-wrapper">
+      <table width="90%" padding="2rem">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nitrogen</th>
+            <th>Phosphorus</th>
+            <th>Potassium</th>
+            <th>Pompa Nitrogen</th>
+            <th>Pompa Phosphorus</th>
+            <th>Pompa Potassium</th>
+            <th>Waktu</th>
+          </tr>
+        </thead>
+        <tbody class="table-row2">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
 
 </body>
+
+<script type="module" src="/pages/npk/npk.js"></script>
+
+<script></script>
+
+
 </html>
